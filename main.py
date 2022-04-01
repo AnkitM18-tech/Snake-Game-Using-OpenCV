@@ -35,8 +35,8 @@ class SnakeGame:
 
     def update(self,imgMain, currentHead):
         if self.gameOver:
-            cvzone.putTextRect(imgMain, "Game Over",(300,400),scale=7,thickness=5,offset=20)
-            cvzone.putTextRect(imgMain, f"Your Score : {self.score}",(300,550), scale=7, thickness=5, offset=20)
+            cvzone.putTextRect(imgMain, "Game Over",(200,400),scale=7,thickness=5,offset=20)
+            cvzone.putTextRect(imgMain, f"Your Score : {self.score}",(200,550), scale=7, thickness=5, offset=20)
         else:
             px, py = self.previousHead
             cx, cy = currentHead
